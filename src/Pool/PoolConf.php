@@ -61,9 +61,10 @@ class PoolConf
     /**
      * @param int $maxIdleTime
      */
-    public function setMaxIdleTime(int $maxIdleTime): void
+    public function setMaxIdleTime(int $maxIdleTime): PoolConf
     {
         $this->maxIdleTime = $maxIdleTime;
+        return $this;
     }
 
     /**
@@ -77,9 +78,10 @@ class PoolConf
     /**
      * @param int $maxObjectNum
      */
-    public function setMaxObjectNum(int $maxObjectNum): void
+    public function setMaxObjectNum(int $maxObjectNum): PoolConf
     {
         $this->maxObjectNum = $maxObjectNum;
+        return $this;
     }
 
     /**
@@ -93,9 +95,10 @@ class PoolConf
     /**
      * @param float $getObjectTimeout
      */
-    public function setGetObjectTimeout(float $getObjectTimeout): void
+    public function setGetObjectTimeout(float $getObjectTimeout): PoolConf
     {
         $this->getObjectTimeout = $getObjectTimeout;
+        return $this;
     }
 
     /**
@@ -109,9 +112,10 @@ class PoolConf
     /**
      * @param array $extraConf
      */
-    public function setExtraConf(array $extraConf): void
+    public function setExtraConf(array $extraConf): PoolConf
     {
         $this->extraConf = $extraConf;
+        return $this;
     }
 
     /**
@@ -125,9 +129,10 @@ class PoolConf
     /**
      * @param int $minObjectNum
      */
-    public function setMinObjectNum(int $minObjectNum): void
+    public function setMinObjectNum(int $minObjectNum): PoolConf
     {
         $this->minObjectNum = $minObjectNum;
+        return $this;
     }
 
 }
